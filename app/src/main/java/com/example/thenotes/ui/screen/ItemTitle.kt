@@ -15,10 +15,10 @@ fun ItemTitle(title:String,modifier:Modifier){
         text = title,
         modifier = modifier,
         color = Color.Black,
-        fontSize = 30.sp,
+        fontSize = 24.sp,
         fontWeight = FontWeight.Medium,
         fontFamily = FontFamily.SansSerif,
         overflow = TextOverflow.Ellipsis,
-        maxLines = 2
+        maxLines = 1
     )
 }
