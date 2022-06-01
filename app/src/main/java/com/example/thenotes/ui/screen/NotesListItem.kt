@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.sp
 import com.example.thenotes.model.Note
 
 @Composable
-fun NoteListItem(modifier: Modifier, note: Note){
+fun NotesItem(modifier: Modifier, note: Note){
     Card(
         modifier = modifier,
         elevation = 10.dp
