@@ -15,7 +15,7 @@ fun ItemText(text:String,modifier: Modifier){
         text = text,
         modifier = modifier,
         color = Color.Black,
-        fontSize = 24.sp,
+        fontSize = 18.sp,
         fontWeight = FontWeight.Normal,
         fontFamily = FontFamily.SansSerif,
         overflow = TextOverflow.Ellipsis,
