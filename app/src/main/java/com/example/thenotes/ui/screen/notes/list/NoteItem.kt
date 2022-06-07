@@ -1,29 +1,27 @@
-package com.example.thenotes.ui.screen
+package com.example.thenotes.ui.screen.notes.list
 
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.material.Card
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import androidx.constraintlayout.compose.ConstraintLayout
 import com.example.thenotes.extensions.toDateString
 import com.example.thenotes.model.Note
 import java.util.*
 
 @Composable
-fun NotesItem(modifier: Modifier, note: Note){
+fun ItemNote(modifier: Modifier, note: Note){
     Card(
         modifier = modifier,
         elevation = 10.dp
     ) {
         Column(
             modifier = Modifier
-                .padding(start = 16.dp)
+                .padding(horizontal = 16.dp)
         ) {
             ItemBody(
                 title = note.title,
@@ -41,8 +39,8 @@ fun NotesItem(modifier: Modifier, note: Note){
 
 @Preview
 @Composable
-fun NotesItemPreview(){
-    NotesItem(
+fun ItemNotePreview(){
+    ItemNote(
         modifier = Modifier
             .fillMaxWidth()
             .wrapContentHeight(),

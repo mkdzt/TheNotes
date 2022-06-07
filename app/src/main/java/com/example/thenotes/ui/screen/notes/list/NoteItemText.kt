@@ -1,4 +1,4 @@
-package com.example.thenotes.ui.screen
+package com.example.thenotes.ui.screen.notes.list
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable

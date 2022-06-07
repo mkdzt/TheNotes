@@ -1,4 +1,4 @@
-package com.example.thenotes.ui.screen
+package com.example.thenotes.ui.screen.notes.list
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
